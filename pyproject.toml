@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tigris-integration"
+version = "0.1.0"
+description = ""
+authors = ["Adil Ansari <adil@tigrisdata.com>"]
+readme = "README.md"
+packages = [{include = "tigris_integration"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tigrisdb = {version = "^0.1.1a1", source = "testpypi"}
+
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
