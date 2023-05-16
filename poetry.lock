@@ -160,14 +160,14 @@ testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (
 
 [[package]]
 name = "tigrisdb"
-version = "0.1.1a2"
+version = "0.1.1a3"
 description = "Python SDK for Tigris <http://www.tigrisdata.com>"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "tigrisdb-0.1.1a2-py3-none-any.whl", hash = "sha256:73e5faabab629d62e8ce05b3b3d498107e127c29120bccd3258a794f5ee1caf3"},
-    {file = "tigrisdb-0.1.1a2.tar.gz", hash = "sha256:518a2f9d27224a306e9b4e41b8779483794905f638fb6611c13374df9d712c6f"},
+    {file = "tigrisdb-0.1.1a3-py3-none-any.whl", hash = "sha256:15f02a428dcec618181a77f3ac707e72d11353b90178e6cb3aa9c66332d81170"},
+    {file = "tigrisdb-0.1.1a3.tar.gz", hash = "sha256:b3523dbd2372f162f08d10614e30ddf203377e663bcd3d468db45ee2f079c8c7"},
 ]
 
 [package.dependencies]
@@ -182,4 +182,4 @@ reference = "testpypi"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "914f8a8211f7a37f4988197a344382f904be74842771532173df194b394f3975"
+content-hash = "1e912fe7ecfd8166827981485c6ccf089c6e140f72fb8186c5706c0f9de27a9f"

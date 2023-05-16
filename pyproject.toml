@@ -8,7 +8,7 @@ packages = [{include = "tigris_integration"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-tigrisdb = {version = "^0.1.1a2", source = "testpypi"}
+tigrisdb = {version = "^0.1.1a3", source = "testpypi"}
 
 
 [[tool.poetry.source]]
