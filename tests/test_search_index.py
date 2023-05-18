@@ -53,7 +53,11 @@ class SearchTestCase(TestCase):
         time.sleep(1)  # wait
         found = search_index.get_many(list(doc["id"] for doc in docs))
         self.assertEqual(len(found), len(docs))
-        pprint(found) # console.log
+        pprint(found)  # console.log
+
+        # search
+        res = search_index.search(Query(q='Jac'), 1)
+        pprint(res)
 
         # finally
         self.assertTrue(search.delete_index(self.index_name))
