@@ -8,14 +8,7 @@ packages = [{include = "tigris_integration"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-tigrisdb = {version = "^0.1.1a4", source = "testpypi"}
-
-
-[[tool.poetry.source]]
-name = "testpypi"
-url = "https://test.pypi.org/simple/"
-default = false
-secondary = false
+tigrisdb = "^1.0.0.b1"
 
 [build-system]
 requires = ["poetry-core"]
