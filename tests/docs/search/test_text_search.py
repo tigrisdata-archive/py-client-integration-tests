@@ -1,11 +1,7 @@
-import dataclasses
-import json
 import time
-from pprint import pprint
 from unittest import TestCase
 
 from tigrisdb.client import TigrisClient
-from tigrisdb.errors import TigrisException
 from tigrisdb.search import Search
 from tigrisdb.search_index import SearchIndex
 from tigrisdb.types import sort
@@ -52,7 +48,7 @@ DOCS = [
 ]
 
 
-class TextSearch(TestCase):
+class TextSearchTest(TestCase):
     client: Search = None
     index: SearchIndex = None
 
