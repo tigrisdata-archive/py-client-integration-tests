@@ -6,7 +6,7 @@ from tigrisdb.client import TigrisClient
 from tigrisdb.errors import TigrisException
 from tigrisdb.types.search import Query
 
-from tests import shared_tigris_config
+from main import tigris_conf
 
 
 class SearchTestCase(TestCase):
@@ -14,7 +14,7 @@ class SearchTestCase(TestCase):
     index_name: str = "users"
 
     def setUp(self) -> None:
-        self.__client = TigrisClient(config=shared_tigris_config)
+        self.__client = TigrisClient(config=tigris_conf)
 
     def test_execute(self):
         search = self.__client.get_search()

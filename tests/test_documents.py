@@ -3,7 +3,7 @@ from unittest import TestCase
 from tigrisdb.client import TigrisClient
 from tigrisdb.errors import TigrisException
 
-from tests import shared_tigris_config
+from main import tigris_conf
 
 
 class DbTestCase(TestCase):
@@ -11,8 +11,7 @@ class DbTestCase(TestCase):
     coll_name: str = "users"
 
     def setUp(self) -> None:
-        self.__client = TigrisClient(shared_tigris_config)
-
+        self.__client = TigrisClient(tigris_conf)
 
     def test_execute(self):
         db = self.__client.get_db()
