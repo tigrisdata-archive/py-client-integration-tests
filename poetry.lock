@@ -142,6 +142,21 @@ files = [
 ]
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.0.tar.gz", hash = "sha256:a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba"},
+    {file = "python_dotenv-1.0.0-py3-none-any.whl", hash = "sha256:f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "setuptools"
 version = "67.8.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
@@ -160,14 +175,14 @@ testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (
 
 [[package]]
 name = "tigrisdb"
-version = "1.0.0b1"
+version = "1.0.0b3"
 description = "Python SDK for Tigris <http://www.tigrisdata.com>"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "tigrisdb-1.0.0b1-py3-none-any.whl", hash = "sha256:0c37a426f5f3dadabb160dfb0b66e1e76e4f5b7346eb16aafe4fadc43585e1a4"},
-    {file = "tigrisdb-1.0.0b1.tar.gz", hash = "sha256:5e665ba01738c242e7cdb53399320d70dc288507550bbcd826f27393a6416e3c"},
+    {file = "tigrisdb-1.0.0b3-py3-none-any.whl", hash = "sha256:2d9ae44cffb0d6ca1cf631f3328e94cbd05debfb2ac2d752263054049e3e579a"},
+    {file = "tigrisdb-1.0.0b3.tar.gz", hash = "sha256:5295ba249eaf67b1b300a415ece65e72e6018d778e02a8baf6d8ee1ae266c899"},
 ]
 
 [package.dependencies]
@@ -177,4 +192,4 @@ protobuf = ">=4.22.3,<5.0.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "1a020ef97a806be7c48f0ff6a0a1ccb7a63cac254c2955198d5f5d1b59d8a2c0"
+content-hash = "61420fc36e2f2fb3123edfd12ada9874a010286ea34f25dd9bdf17fbda96fa6e"
