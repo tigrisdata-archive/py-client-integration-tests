@@ -13,7 +13,6 @@ class DbTestCase(TestCase):
     def setUp(self) -> None:
         self.__client = TigrisClient(tigris_conf)
 
-
     def test_execute(self):
         db = self.__client.get_db()
         # drop a collection if exists
