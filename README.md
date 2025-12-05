@@ -1,3 +1,8 @@
+> ⚠️ **This repository is archived.**
+>
+> Tigris has pivoted from this database project to a new, globally distributed S3-compatible object storage service.
+> Learn more about the new product here: https://www.tigrisdata.com/
+
 # py-client-integration-tests
 Integration tests using python sdk
 
